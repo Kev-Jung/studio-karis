@@ -1,3 +1,4 @@
+
 const navToggle = () => {
   const toggleBtn = document.querySelector(".toggle-btn")
   const exitBtn = document.querySelector(".close-btn")
@@ -10,7 +11,7 @@ const navToggle = () => {
       navLinksContainer.classList.toggle("nav-slide")
     })
   }
-  
+
   toggler(toggleBtn)
   toggler(exitBtn)
 }
