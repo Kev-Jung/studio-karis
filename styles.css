@@ -22,14 +22,6 @@
 
 /* ---------------- COMMON STYLING ---------------- */
 
-.flex {
-  display: flex;
-}
-
-.grid {
-  display: grid;
-}
-
 .max-width {
   max-width: 1200px;
   margin: auto;
@@ -41,6 +33,10 @@ img {
   width: 100%;
   object-fit: cover;
   overflow: hidden;
+}
+
+.text-color {
+  color:rgb(100, 100, 100)
 }
 
 .bottom-border {
@@ -231,13 +227,13 @@ img {
 
 .photo-gallery--banner {
   max-width: 860px;
-  margin: 90px auto;
+  margin: 100px auto;
   text-align: center;
 }
 
 .photo-gallery--banner h3 {
-  font-size: 1.5em;
-  margin-bottom: 40px;
+  font-size: 1.3em;
+  margin-bottom: 20px;
 }
 
 .photo-gallery--banner p {
@@ -293,9 +289,9 @@ img {
 }
 
 .footer-title {
-  margin: 40px 0;
-  padding-bottom: 40px;
-  font-size: 15px;
+  margin:50px 0;
+  padding-bottom: 50px;
+  font-size: 18px;
 }
 
 .stay-connected:first-child {
@@ -323,8 +319,9 @@ img {
   line-height: 2;
 }
 
-.text-center {
-  margin: auto;
+.fa {
+  margin: 30px 10px 0 0;
+  color: #000;
 }
 
 #copyright {
