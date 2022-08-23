@@ -17,15 +17,57 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Gotham-Light";
+}
+
+/* ---------------- COMMON STYLING ---------------- */
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.max-width {
+  max-width: 1200px;
+  margin: auto;
+}
+
+img {
+  border-radius: 6px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.bottom-border {
+  border-bottom: .9px solid rgb(205, 205, 205);
+}
+
+.nav-link, .shop-btn {
   font-family: "Mirage";
-  transition: all 300ms ease;
+}
+
+.photo-gallery--banner h3, .hero-prompt--headline {
+  font-family: "Mirage-Thin";
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 50px;
 }
 
 /* ---------------- NAVBAR SECTION ---------------- */
 
-.logo {
+#logo {
   width: 130px;
   height: auto;
+}
+
+.nav-scroll {
+  background: #fff;
+  z-index: 2;
 }
 
 .navbar-container {
@@ -34,6 +76,7 @@
   display: flex;
   align-items: center;
   padding: 20px 40px;
+  transition: all 300ms ease;
 }
 
 .navbar-links-container {
@@ -47,6 +90,14 @@
   color: black;
   text-decoration: none;
   font-size: 16px;
+}
+
+.navbar-links-container:hover a {
+  color: rgba(0,0,0,0.5)
+}
+
+.navbar-links-container a:hover {
+  color: #000;
 }
 
 .toggle-btn, .close-btn {
@@ -111,13 +162,18 @@
     height: 100vh;
     width: 100%;
     color: white;
-    background-color: #000;
+    background-color: rgba(0,0,0,0.8);
     transform: translateX(100%);
+    /* transition: transform 400ms ease; */
   }
 
   .nav-link {
     color: white;
     font-size: 26px;
+  }
+
+  .navbar-links-container:hover a{
+    color: #fff;
   }
 
   .hide {
@@ -136,7 +192,7 @@
 
 /* ---------------- HERO SECTION ---------------- */
 
-.hero {
+#hero {
   height: 100vh;
   width: 100%;
   background: url("./images/wedding.jpg");
@@ -153,13 +209,6 @@
   max-width: 600px;
 }
 
-.hero-prompt--headline {
-  font-family: "Mirage-Thin";
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  margin-bottom: 30px;
-}
-
 .shop-btn {
   border: 2px solid #000;
   height: 50px;
@@ -167,10 +216,120 @@
   background-color: transparent;
   letter-spacing: 2px;
   font-size: 12px;
+  margin: auto;
+  transition: all 400ms ease;
 }
 
 .shop-btn:hover {
   background-color: #000;
   color: white;
   cursor: pointer;
+}
+
+/* ---------------- PHOTO GALLERY SECTION ---------------- */
+
+
+.photo-gallery--banner {
+  max-width: 860px;
+  margin: 90px auto;
+  text-align: center;
+}
+
+.photo-gallery--banner h3 {
+  font-size: 1.5em;
+  margin-bottom: 40px;
+}
+
+.photo-gallery--banner p {
+  line-height: 2;
+}
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.photo-tile {
+  height: 300px;
+  width: 100%;
+  position: relative;
+}
+
+.photo-tile:hover .photo-credit {
+  opacity: 1;
+}
+
+.photo-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.photo-credit {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  font-size: 12px;
+  padding: 10px;
+  opacity: 0;
+  transition: all 300ms ease;
+}
+
+.button-container {
+  text-align: center;
+  margin: 100px;
+}
+
+
+/* ---------------- FOOTER SECTION ---------------- */
+
+.footer-container {
+  padding: 50px 0 150px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 50px;
+  position: relative;
+}
+
+.footer-title {
+  margin: 40px 0;
+  padding-bottom: 40px;
+  font-size: 15px;
+}
+
+.stay-connected:first-child {
+  text-transform: uppercase;;
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+
+.assets-container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.asset-wrapper {
+  max-height: 180px;
+  width: 100%;
+}
+
+.footer-text {
+  font-size: 13px;
+  line-height: 2;
+}
+
+.text-center {
+  margin: auto;
+}
+
+#copyright {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
 }
