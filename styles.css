@@ -2,12 +2,10 @@
   font-family: "Gotham-Light";
   src: url("/fonts/Gotham-Light.otf");
 }
-
 @font-face {
   font-family: "Mirage";
   src: url("/fonts/Mirage-Regular.otf");
 }
-
 @font-face {
   font-family: "Mirage-Thin";
   src: url("/fonts/Mirage-Thin.otf");
@@ -20,9 +18,10 @@
   font-family: "Gotham-Light";
 }
 
+
 /* ---------------- COMMON STYLING ---------------- */
 
-.max-width {
+.margin {
   max-width: 1200px;
   margin: auto;
 }
@@ -52,14 +51,35 @@ img {
   text-transform: uppercase;
   letter-spacing: 4px;
   margin-bottom: 50px;
-  font-size: 26px;
+  font-size: 1.5em;
 }
+
+@media (max-width: 1250px) {
+  .margin {
+    max-width: 964px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .margin {
+    margin: 40px;
+  }
+}
+
+@media (max-width: 425px) {
+  .margin {
+    margin: 20px;
+  }
+  .photo-gallery--banner h3, .hero-prompt--headline, .form-title {
+    font-size: 1.3em;
+  }
+}
+
 
 /* ---------------- NAVBAR SECTION ---------------- */
 
 #logo {
   width: 130px;
-  height: auto;
 }
 
 .nav-scroll {
@@ -84,7 +104,7 @@ img {
 }
 
 .nav-link {
-  color: black;
+  color: #000;
   text-decoration: none;
   font-size: 16px;
 }
@@ -133,7 +153,6 @@ img {
 }
 
 @media (max-width: 768px) {
-
   body {
     overflow-x: hidden;
   }
@@ -186,12 +205,18 @@ img {
   }
 }
 
+@media (max-width: 425px) {
+  #logo {
+    width: 100px;
+  }
+}
+
 
 /* ---------------- HERO SECTION ---------------- */
 
 #hero {
   height: 100vh;
-  width: 100%;
+  /* width: 100%; */
   background: url("./images/wedding.jpg");
   background-size: cover;
   background-position: bottom;
@@ -205,8 +230,6 @@ img {
   text-align: center;
   max-width: 600px;
 }
-
-
 
 .default-btn {
   border: 2px solid #000;
@@ -224,6 +247,26 @@ img {
   color: white;
   cursor: pointer;
 }
+
+@media (max-width: 830px) {
+  .hero-prompt {
+    width: 450px;
+  }
+}
+
+@media (max-width: 425px) {
+  .hero-prompt--headline {
+    width: 300px;
+    margin: 0 auto 40px;
+  }
+
+  .default-btn {
+    height: 40px;
+    width: 130px;
+    font-size: 10px;
+  }
+}
+
 
 /* ---------------- PHOTO GALLERY SECTION ---------------- */
 
@@ -249,7 +292,7 @@ img {
 }
 
 .photo-tile {
-  height: 300px;
+  height: 380px;
   width: 100%;
   position: relative;
   transition: transform 500ms ease-in-out;
@@ -285,6 +328,34 @@ img {
 }
 
 
+@media  (max-width: 1250px) {
+  .photo-tile {
+    height: 300px;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 850px) {
+  .photo-gallery {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .photo-gallery--banner h3 {
+    width: 300px;
+    margin: 0 auto 40px;
+  }
+
+  .photo-gallery {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+
+
+
 /* ---------------- FOOTER SECTION ---------------- */
 
 .footer-container {
@@ -296,19 +367,14 @@ img {
 }
 
 .footer-title {
-  margin:50px 0;
+  margin: 50px 0;
   padding-bottom: 50px;
   font-size: 18px;
-}
-
-.stay-connected:first-child {
-  text-transform: uppercase;;
 }
 
 .span-2 {
   grid-column: span 2;
 }
-
 
 .assets-container {
   display: grid;
@@ -339,6 +405,42 @@ img {
   transform: translateX(-50%);
 }
 
+@media (min-width: 900px) and (max-width: 1250px) {
+  .asset-wrapper {
+  height: 140px;
+  }
+}
+
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 2fr;
+  }
+
+  .footer-container > div {
+    grid-column: span 2;
+  }
+
+  .assets-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-title {
+    margin: 30px 0;
+    padding-bottom: 30px;
+    font-size: 14px;
+  }
+}
+
+@media  (max-width: 600px) {
+  #copyright {
+    width: 250px;
+    text-align: center;
+  }
+
+  .assets-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 
 
@@ -347,12 +449,11 @@ img {
 .form-container {
   padding: 180px 0 0 0;
   text-align: center;
+  margin: auto;
 }
 
 form {
-  /* border: 1px solid red; */
-  padding: 0 200px 150px;
-  margin: auto;
+  padding: 0 30px 150px;
 }
 
 .grid {
@@ -373,7 +474,7 @@ form {
 }
 
 input, textarea {
-  height: 42px;
+  height: 38px;
   background-color: rgb(247, 246, 246);
   border: 1px solid rgb(205, 205, 205);
   padding: 0 10px;
@@ -381,4 +482,11 @@ input, textarea {
 
 textarea {
   height: auto;
+  padding: 10px;
+}
+
+@media (max-width: 1250px) {
+  form {
+    /* padding: 0 0 150px; */
+  }
 }
