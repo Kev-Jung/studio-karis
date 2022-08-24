@@ -252,10 +252,15 @@ img {
   height: 300px;
   width: 100%;
   position: relative;
+  transition: transform 500ms ease-in-out;
 }
 
 .photo-tile:hover .photo-credit {
   opacity: 1;
+}
+
+.photo-tile:hover {
+  transform: scale(1.05);
 }
 
 .photo-container {
@@ -324,6 +329,7 @@ img {
 .fa {
   margin: 30px 10px 0 0;
   color: #000;
+  cursor: pointer;
 }
 
 #copyright {

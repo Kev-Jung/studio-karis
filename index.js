@@ -1,4 +1,5 @@
 
+// Opens and closes the nav on mobile screen size
 const navToggle = () => {
   const toggleBtn = document.querySelector(".toggle-btn")
   const exitBtn = document.querySelector(".close-btn")
@@ -16,6 +17,7 @@ const navToggle = () => {
   toggler(exitBtn)
 }
 
+// Changes the background color of the nav when user scrolls the page.
 const scrollNav = () => {
   const navbar = document.querySelector(".navbar-container")
   window.addEventListener("scroll", () => {
