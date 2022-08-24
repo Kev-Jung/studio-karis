@@ -43,15 +43,16 @@ img {
   border-bottom: .9px solid rgb(205, 205, 205);
 }
 
-.nav-link, .shop-btn {
+.nav-link, .default-btn {
   font-family: "Mirage";
 }
 
-.photo-gallery--banner h3, .hero-prompt--headline {
+.photo-gallery--banner h3, .hero-prompt--headline, .form-title {
   font-family: "Mirage-Thin";
   text-transform: uppercase;
   letter-spacing: 4px;
   margin-bottom: 50px;
+  font-size: 26px;
 }
 
 /* ---------------- NAVBAR SECTION ---------------- */
@@ -205,7 +206,9 @@ img {
   max-width: 600px;
 }
 
-.shop-btn {
+
+
+.default-btn {
   border: 2px solid #000;
   height: 50px;
   width: 160px;
@@ -216,7 +219,7 @@ img {
   transition: all 400ms ease;
 }
 
-.shop-btn:hover {
+.default-btn:hover {
   background-color: #000;
   color: white;
   cursor: pointer;
@@ -232,7 +235,6 @@ img {
 }
 
 .photo-gallery--banner h3 {
-  font-size: 1.3em;
   margin-bottom: 20px;
 }
 
@@ -329,4 +331,48 @@ img {
   bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+
+
+
+/* ---------------- CONTACT.HTML CSS ---------------- */
+
+.form-container {
+  padding: 180px 0 0 0;
+  text-align: center;
+}
+
+form {
+  /* border: 1px solid red; */
+  padding: 0 200px 150px;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.input-container label {
+  align-self: flex-start;
+}
+
+input, textarea {
+  height: 42px;
+  background-color: rgb(247, 246, 246);
+  border: 1px solid rgb(205, 205, 205);
+  padding: 0 10px;
+}
+
+textarea {
+  height: auto;
 }
