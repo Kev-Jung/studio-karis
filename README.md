@@ -10,6 +10,9 @@ This project is a static website that I created for an online wedding business r
 
 1. Building a Responsive Navigation
    - An obstacle I ran into early on was building a responsive navigation with a toggle button using pure CSS only. It was initially challenging to use CSS to build my own icons for toggling and exiting the navbar on mobile screen sizes and using the transform properties various usages to create a sliding navbar with some javascript. The navigation also needed to be fixed and background color changed on scroll which javascript was used to create. Through this exercise I became more comfortable with using media queries, flexbox, and custom CSS styling.
+
+https://user-images.githubusercontent.com/86936720/186781183-a41903c6-3a65-4165-97a1-d6ba36e8b03c.mov
+   
 2. Responsive Layout for Photo Gallery
    - One of the client's requirements was to create a photo collage to showcase their products and customer submited photos. I initally used flexbox for the layout, but realized that using flexbox did not create a beautiful desgin of 3x3 tiles. Instead I used CSS grid for the layout and manipulated the grid-template-columns at various breakpoints for a seamless transition to mobile. Each image tile scales the image to be bigger and hovering on the photo will reveal the photo credits for the submitted customer on the corner of the image.
 
