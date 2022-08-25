@@ -68,7 +68,7 @@ img {
 
 @media (max-width: 425px) {
   .margin {
-    margin: 20px;
+    margin: 10px;
   }
   .photo-gallery--banner h3, .hero-prompt--headline, .form-title {
     font-size: 1.3em;
@@ -340,9 +340,16 @@ img {
   }
 }
 
-@media (min-width: 425px) and (max-width: 850px) {
+@media (max-width: 850px) {
   .photo-gallery {
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .photo-gallery {
+    grid-template-columns: 1fr;
     gap: 20px;
   }
 }
@@ -355,7 +362,7 @@ img {
 
   .photo-gallery {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 10px;
   }
 }
 
