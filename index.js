@@ -4,12 +4,13 @@ const navToggle = () => {
   const toggleBtn = document.querySelector(".toggle-btn")
   const exitBtn = document.querySelector(".close-btn")
   const navLinksContainer = document.querySelector(".navbar-links-container")
+  const main = document.querySelector("main")
   
   const toggler = (element) => {
     element.addEventListener("click", () => {
       exitBtn.classList.toggle("show")
       toggleBtn.classList.toggle("hide")
-      document.querySelector("main").classList.toggle("no-visibility")
+      main.classList.toggle("no-visibility")
       navLinksContainer.classList.toggle("nav-slide")
     })
   }
