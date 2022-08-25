@@ -120,6 +120,7 @@ img {
 .toggle-btn, .close-btn {
   display: none;
   margin-left: auto;
+  cursor: pointer;
 }
 
 .line {
@@ -178,13 +179,13 @@ img {
     height: 100vh;
     width: 100%;
     color: white;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.9);
     transform: translateX(100%);
-    /* transition: transform 400ms ease; */
+    transition: transform 400ms ease;
   }
 
   .nav-link {
-    color: white;
+    color: #fff;
     font-size: 26px;
   }
 
@@ -216,7 +217,7 @@ img {
 
 #hero {
   height: 100vh;
-  /* width: 100%; */
+  width: 100%;
   background: url("./images/wedding.jpg");
   background-size: cover;
   background-position: bottom;
@@ -228,6 +229,7 @@ img {
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
+  margin: auto;
   max-width: 600px;
 }
 
@@ -485,8 +487,17 @@ textarea {
   padding: 10px;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 550px) {
   form {
-    /* padding: 0 0 150px; */
+    padding: 0 0 150px ;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .input-container {
+    margin-bottom: 35px;
   }
 }
