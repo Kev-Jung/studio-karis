@@ -193,6 +193,10 @@ img {
     color: #fff;
   }
 
+  .no-visibility {
+    visibility: hidden;
+  }
+
   .hide {
     display: none;
   }

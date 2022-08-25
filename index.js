@@ -9,6 +9,7 @@ const navToggle = () => {
     element.addEventListener("click", () => {
       exitBtn.classList.toggle("show")
       toggleBtn.classList.toggle("hide")
+      document.querySelector("main").classList.toggle("no-visibility")
       navLinksContainer.classList.toggle("nav-slide")
     })
   }
