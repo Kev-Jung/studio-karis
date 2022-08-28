@@ -256,13 +256,13 @@ img {
 
 @media (max-width: 830px) {
   .hero-prompt {
-    width: 450px;
+    max-width: 450px;
   }
 }
 
 @media (max-width: 425px) {
   .hero-prompt--headline {
-    width: 300px;
+    max-width: 300px;
     margin: 0 auto 40px;
   }
 
