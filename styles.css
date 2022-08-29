@@ -21,6 +21,11 @@
 
 /* ---------------- COMMON STYLING ---------------- */
 
+a {
+  color: #000;
+  text-decoration: none;
+}
+
 .margin {
   max-width: 1200px;
   margin: auto;
@@ -181,6 +186,7 @@ img {
     color: white;
     background-color: rgba(0,0,0,0.9);
     transform: translateX(100%);
+    visibility:hidden;
     transition: transform 400ms ease;
   }
 
@@ -207,6 +213,7 @@ img {
 
   .nav-slide {
     transform: translateX(0);
+    visibility: visible;
   }
 }
 
@@ -257,13 +264,13 @@ img {
 
 @media (max-width: 830px) {
   .hero-prompt {
-    max-width: 450px;
+    max-width: 500px;
   }
 }
 
 @media (max-width: 425px) {
   .hero-prompt--headline {
-    max-width: 320px;
+    min-width: 300px;
     margin: 0 auto 40px;
   }
 
