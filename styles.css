@@ -246,6 +246,7 @@ img {
   font-size: 12px;
   margin: auto;
   transition: all 400ms ease;
+  color: #000;
 }
 
 .default-btn:hover {
