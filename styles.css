@@ -1,14 +1,14 @@
 @font-face {
   font-family: "Gotham-Light";
-  src: url("./fonts/Gotham-Light.otf");
+  src: url(./fonts/Gotham-Light.otf);
 }
 @font-face {
   font-family: "Mirage";
-  src: url("./fonts/Mirage-Regular.otf");
+  src: url(./fonts/Mirage-Regular.otf);
 }
 @font-face {
   font-family: "Mirage-Thin";
-  src: url("./fonts/Mirage-Thin.otf");
+  src: url(./fonts/Mirage-Thin.otf);
 }
 
 * {
