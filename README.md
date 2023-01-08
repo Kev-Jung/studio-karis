@@ -1,6 +1,6 @@
 # Studio Karis - Prototype Website
 
-[Preview Website](https://kev-jung.github.io/studio-karis/index.html)
+[Preview Website](https://kev-jung.github.io/studiokaris-v1.0/index.html)
 
 ## Background
 
